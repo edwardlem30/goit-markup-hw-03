@@ -15,12 +15,40 @@
 
 body 
 {
+    margin: 0;
     font-family: var(--main-font), sans-serif;
     font-size: var(--main-font-size);
     letter-spacing: 0.03em;
     line-height: 1.71;
 }
 /* Header */
+.header {
+    padding-top: 24px;
+    }
+.container, .container-logo
+{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+    outline: 2px solid tomato;
+}
+
+.container-logo 
+{
+    text-align: left;
+}
+.container h1,
+h2,
+h3, p,
+ul, li:nth-last-of-type(-n+2) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.list-contact {padding: 0%;}
 .header-item, .contact-link, .contact-tel 
 {
     text-decoration: none;
@@ -29,22 +57,28 @@ body
 /* logo */
 .logo
 {
+    display: inline-block;
+
     font-family: var(--secondary-font), sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-transform: capitalize;
     text-decoration: none;
+    
     color: var(--logo-txt-color);
+    outline: 2px solid tomato;
 }
 
-.header.logo, .footer>.logo 
+.header.logo, .footer .logo 
 {
     color: var(--bcg-color);
+    
 }
 
 .logo-cl 
 {
+    
     color: var(--accent-txt-color);
 }
 
@@ -57,11 +91,16 @@ body
 
 .header-link 
 {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     text-decoration: none;
     text-transform: capitalize;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
     color: var(--subtitle-txt);
     
 }
@@ -97,22 +136,35 @@ body
 /* Block Hero */
 .hero 
 {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--hero-bcg);
 }
 .hero-title 
 {
+    outline: 2px solid tomato;
+    display: block;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    margin-bottom: 30px;
     color: var(--bcg-color);
 }
 
 
 .button 
 {
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 32px;
     align-items: center;
     text-align: center;
     cursor: pointer;
@@ -126,6 +178,7 @@ body
 }
 .button.primary
 {
+    margin-top: 30px;
     color: var(--bcg-color);
     background-color: var(--accent-txt-color);
 }
@@ -174,8 +227,21 @@ body
 .command-list, .header-list, 
 .filter-list, .card-list, .list 
 {
+    padding: 0px;
     list-style: none;
 }
+.header-list 
+{
+    display: flex;
+}
+.header-list .header-item + .header-item 
+{
+    margin-left: 50px;
+}
+/* .header-item {
+    outline: 2px solid tomato;
+
+} */
 
 /* Filter on page two */
 .filter-btn.current,
