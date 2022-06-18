@@ -1,0 +1,235 @@
+/* Fonts */
+:root 
+{
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --main-font-size: 14px;
+    --accent-txt-color: #2196F3;
+    --logo-txt-color: #000000;
+    --subtitle-txt: #212121;
+    --primary-txt-color: #757575;
+    --hero-bcg: #2F303A;
+    --background: #F5F4FA;
+    --bcg-color: #FFFFFF;
+}
+
+body 
+{
+    font-family: var(--main-font), sans-serif;
+    font-size: var(--main-font-size);
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+}
+/* Header */
+.header-item, .contact-link, .contact-tel 
+{
+    text-decoration: none;
+    list-style: none;
+}
+/* logo */
+.logo
+{
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--logo-txt-color);
+}
+
+.header.logo, .footer>.logo 
+{
+    color: var(--bcg-color);
+}
+
+.logo-cl 
+{
+    color: var(--accent-txt-color);
+}
+
+/* Header */
+.header-link.current
+{
+    letter-spacing: 0.02em;
+    color: var(--accent-txt-color);
+}
+
+.header-link 
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--subtitle-txt);
+    
+}
+.header-link:hover,
+.header-link:focus 
+{
+    color: var(--accent-txt-color);
+}
+
+/* link to page */
+.link, .card-text 
+{
+    color: var(--primary-txt-color);
+}
+
+.link, .link-map
+{
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.71;
+    text-decoration: none;
+}
+.item>.link {letter-spacing: 0.03em;}
+.link-map 
+{
+    color: var(--bcg-color); 
+}
+
+.link:hover, .link:focus, .link-map:hover, .link-map:focus
+{  color: var(--accent-txt-color);
+}
+/* Block Hero */
+.hero 
+{
+    background-color: var(--hero-bcg);
+}
+.hero-title 
+{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--bcg-color);
+}
+
+
+.button 
+{
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: var(--background); 
+    color: var(--subtitle-txt);
+}
+.button.primary
+{
+    color: var(--bcg-color);
+    background-color: var(--accent-txt-color);
+}
+.button.primary:hover, .button-primary:focus
+{
+    background-color: #188CE8;
+}
+
+/* Benefits */
+.work-title, .command-title
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--subtitle-txt);
+}
+
+.section-title 
+{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--subtitle-txt); 
+}
+
+.section-item .text 
+{   
+    color: var(--primary-txt-color);
+}
+.command-item .subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-transform: capitalize;
+    color: var(--subtitle-txt);
+}
+.command-item .text 
+{
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-txt-color);
+}
+
+.section-list, .work-list, 
+.command-list, .header-list, 
+.filter-list, .card-list, .list 
+{
+    list-style: none;
+}
+
+/* Filter on page two */
+.filter-btn.current,
+.filter-btn:hover,
+.filter-btn:focus {
+    letter-spacing: 0.02em;
+    color: var(--bcg-color);
+    background-color: var(--accent-txt-color);
+}
+.filter-btn
+{
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--subtitle-txt);
+}
+.filter-btn,
+.card-title .ignor,
+.card-text .ignor 
+{
+    text-transform: none;
+}
+.filter-btn
+{
+    font-family: var(--main-font), sans-serif;
+    font-weight: 500;
+    font-size: var(--main-font-size);
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;;
+}
+.card-title 
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-transform: capitalize;
+    letter-spacing: 0.06em;
+    color: var(--subtitle-txt);
+}
+.card-text 
+{
+    text-transform: capitalize;
+}
+
+.filter-btn:hover,
+.filter-btn:focus 
+{
+    text-transform: capitalize;
+    background: var(--accent-txt-color);
+    color: var(--bcg-color);
+}
+/* Footer */
+.footer 
+{
+    background-color: var(--hero-bcg);
+}
+
